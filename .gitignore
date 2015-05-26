@@ -1,0 +1,11 @@
+*
+!src/
+!WebContent/
+!webapp/
+!wsdl/
+!wssrc/
+!.gitignore
+!.build.properties
+!.build.xml
+!build.gradle
+!gradlew
