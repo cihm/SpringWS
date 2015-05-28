@@ -1,11 +1,7 @@
-*
+/*
 !src/
-!WebContent/
-!webapp/
-!wsdl/
-!wssrc/
+!lib/
 !.gitignore
-!.build.properties
-!.build.xml
 !build.gradle
 !gradlew
+!gradle/
