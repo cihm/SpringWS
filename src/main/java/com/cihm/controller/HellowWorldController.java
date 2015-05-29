@@ -47,7 +47,7 @@ public class HellowWorldController {
 	private List<String> getList() {
  
 		List<String> list = new ArrayList<String>();
-		list.add("List A");
+		list.add("List lewis");
 		list.add("List B");
 		list.add("List C");
 		list.add("List D");
