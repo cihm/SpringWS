@@ -25,6 +25,7 @@ war {
 
 task deploy (type: Copy, dependsOn: clean) {
     from war
+    println "${tomcat_home}"
     into "${tomcat_home}/webapps"
     //into "/opt/apache-tomcat-7.0.61/webapps"
 }
