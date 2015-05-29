@@ -3,9 +3,11 @@
 Linux env
 
  Clone project
+ <br />
   $ git clone https://github.com/cihm/SpringWS.git 
-
+<br />
  Modify your deploy path
+ <br />
   $ vim gradle.properties 
   
  Run gradle  
