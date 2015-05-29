@@ -13,6 +13,18 @@ repositories {
     mavenCentral()
 }
 
+
+war {
+    baseName = 'JavaSpringMVC'
+
+    from('src/main/java') {
+        include '*.properties'
+        into ('WEB-INF/classes')
+    }
+}
+
+
+
 //Project dependencies
 dependencies {
 	compile 'ch.qos.logback:logback-classic:1.1.2'
