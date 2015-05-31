@@ -1,29 +1,35 @@
 # SpringWS
 
-Linux env
+##Linux env
 
- Clone project
- <br />
-  * $ git clone https://github.com/cihm/SpringWS.git 
-<br />
- Modify your deploy path
- <br />
+  * Clone project
+   <br />
+ $ git clone https://github.com/cihm/SpringWS.git 
+   <br />
+  * Modify your deploy path
+   <br />
   $ vim gradle.properties 
-  
- Run gradle  
+    <br />
+  * Run gradle  
+    <br />
  ./gradlew build
+   <br />
  ./gradlew deploy
  
- 
-Window env 
-
- Clone project
+ <br />
+##Window env 
+<br />
+ * Clone project
+ <br />
   $ git clone https://github.com/cihm/SpringWS.git 
-
- Modify your deploy path
+ <br />
+ * Modify your deploy path
+  <br />
   $ vim gradle.properties 
+  <br />
   
-  
- Run gradle  
+ * Run gradle  
+  <br />
   gradle build
+  <br />
   gradle deploy
