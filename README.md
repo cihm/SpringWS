@@ -3,7 +3,7 @@
 ##Linux env
 
   * Clone project
-  s
+   <br />
  $ git clone https://github.com/cihm/SpringWS.git 
    <br />
   * Modify your deploy path
@@ -12,9 +12,9 @@
     <br />
   * Run gradle  
 
- ./gradlew build
+    ./gradlew build
    <br />
- ./gradlew deploy
+    ./gradlew deploy
  
  <br />
 ##Window env 
@@ -30,6 +30,6 @@
   
  * Run gradle  
 
-  gradle build
-  <br />
-  gradle deploy
+   gradle build
+   <br />
+   gradle deploy
