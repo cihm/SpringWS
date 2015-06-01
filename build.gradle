@@ -34,8 +34,19 @@ task deploy (type: Copy, dependsOn: clean) {
 //Project dependencies
 dependencies {
 	compile 'ch.qos.logback:logback-classic:1.1.2'
-	compile 'org.springframework:spring-webmvc:4.0.6.RELEASE'
+	compile 'org.springframework:spring-framework-bom:4.0.0.RELEASE'
+	compile 'org.springframework:spring-webmvc:4.0.0.RELEASE'
+	
+   // compile 'org.springframework:spring-aspects:4.0.0.RELEASE'
+
+	
+	
 	compile 'jstl:jstl:1.2'
+	compile 'com.fasterxml.jackson.core:jackson-databind:2.0.0'
+	compile 'com.fasterxml.jackson.core:jackson-annotations:2.0.0'
+	compile 'com.fasterxml.jackson.core:jackson-core:2.0.0'
+
+	
 	//include in compile only, exclude in the war
 	providedCompile 'javax.servlet:servlet-api:2.5'
 }

@@ -1,6 +1,7 @@
 package com.cihm.controller;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import org.slf4j.Logger;
@@ -9,8 +10,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
  
+//Return to webPage directly 
+
 @Controller
 public class HellowWorldController {
  
@@ -22,7 +26,7 @@ public class HellowWorldController {
 		logger.debug("welcome() - name {}", name);
  
 		ModelAndView model = new ModelAndView();
-		model.setViewName("index");
+		model.setViewName("index.jsp");
 		model.addObject("name", name);
  
 		return model;
@@ -30,6 +34,7 @@ public class HellowWorldController {
 	}
 	
 	
+
 	@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public ModelAndView getdata() {
  
@@ -37,7 +42,7 @@ public class HellowWorldController {
  
 		//return back to index.jsp
 		ModelAndView model = new ModelAndView();
-		model.setViewName("list");
+		model.setViewName("list.jsp");
 		model.addObject("lists", list);
  
 		return model;
