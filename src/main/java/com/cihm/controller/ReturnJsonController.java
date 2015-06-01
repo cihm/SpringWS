@@ -28,6 +28,7 @@ import com.cihm.pojo.PeopleVo;
 public class ReturnJsonController {
 	 
 	
+	//Get method
 	@RequestMapping(value = "/add", method = RequestMethod.GET)
 	public List<PeopleVo> insertUsert(@RequestParam String name,
 			@RequestParam Integer age, @RequestParam String hobby,
@@ -43,7 +44,7 @@ public class ReturnJsonController {
 	}
 	
 	
-	
+	//Let url path as var
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET, produces = "application/json", headers = "Accept=application/json")
 	public ArrayList<String> getUser(@PathVariable int id) {
 		System.out.print("i m  in :" + id);
@@ -51,8 +52,9 @@ public class ReturnJsonController {
 	}
 	
 	
-	@RequestMapping(value = "/testJson/", method = RequestMethod.GET)
-	public ArrayList<String> testJson(
+	//Get method
+	@RequestMapping(value = "/testGet/", method = RequestMethod.GET)
+	public ArrayList<String> testGet(
 			@RequestParam(
 			value = "keyword", required = false, defaultValue = "World") 
 			String keyword) {
@@ -63,7 +65,22 @@ public class ReturnJsonController {
 		result.add(keyword + "2");
 		result.add(keyword + "3");
 		return result;
+	}
+	
+	
+	//Post method
+	@RequestMapping(value = "/testPost/", method = RequestMethod.POST)
+	public ArrayList<String> testPost(
+			@RequestParam(
+			value = "keyword", required = false, defaultValue = "World") 
+			String keyword) {
 
+		System.out.print("i m  in :" + keyword);
+		ArrayList<String> result = new ArrayList<String>();
+		result.add(keyword);
+		result.add(keyword + ":post");
+		result.add(keyword + ":postt");
+		return result;
 	}
 	
 	
