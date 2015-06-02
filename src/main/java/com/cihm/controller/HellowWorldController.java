@@ -20,6 +20,17 @@ public class HellowWorldController {
  
 	private static final Logger logger = LoggerFactory.getLogger(HellowWorldController.class);
  
+	@RequestMapping(value = { "/", "/welcome**" })
+	public ModelAndView login() {
+ 
+		System.out.println("lllllgggggiiiinnn");
+		ModelAndView model = new ModelAndView();
+		model.setViewName("login.jsp");
+ 
+		return model;
+ 
+	}
+	
 	@RequestMapping(value = "/hello/{name:.+}", method = RequestMethod.GET)
 	public ModelAndView welcome(@PathVariable("name") String name) {
  
