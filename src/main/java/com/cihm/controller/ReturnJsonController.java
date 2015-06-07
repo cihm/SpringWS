@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
-import com.cihm.pojo.PeopleVo;
+import com.cihm.pojo.Person;
 
 //Return json data type directluy
 
@@ -30,14 +30,14 @@ public class ReturnJsonController {
 	
 	//Get method
 	@RequestMapping(value = "/add", method = RequestMethod.GET)
-	public List<PeopleVo> insertUsert(@RequestParam String name,
-			@RequestParam Integer age, @RequestParam String hobby,
-			@RequestParam String hobby2) {
+	public List<Person> insertUsert(@RequestParam String name,
+			 @RequestParam int age 
+			) {
 		
-		System.out.println("======" + name + age + hobby);
-		List<PeopleVo> listP = new ArrayList<PeopleVo>();
-		PeopleVo p1 = new PeopleVo(name, age, hobby, hobby2);
-		PeopleVo p2 = new PeopleVo(name + "2", age + 1, hobby, hobby2);
+		System.out.println("======" + name  + age);
+		List<Person> listP = new ArrayList<Person>();
+		Person p1 = new Person(age,name);
+		Person p2 = new Person(age,name);
 		listP.add(p1);
 		listP.add(p2);
 		return listP;
